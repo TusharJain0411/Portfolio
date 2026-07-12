@@ -1,0 +1,819 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg:#08111f;
+    --card:#101c2e;
+    --card2:#0f1728;
+    --text:#eef4ff;
+    --muted:#9caec7;
+}
+
+
+.Skill_section{
+    width:100%;
+    padding:110px 7%;
+    font-family:'Inter',sans-serif;
+}
+
+.skill-header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:65px;
+}
+
+.skill-header span{
+    color:#00d9ff;
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.skill-header h1{
+    margin-top:10px;
+    color:var(--text);
+    font-size:48px;
+    font-weight:700;
+}
+
+.sillsActive{
+
+    width:55px;
+    height:4px;
+
+    border-radius:50px;
+
+    margin-top:18px;
+
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #4f7cff,
+        #ad4dff
+    );
+
+}
+
+
+
+.skills-cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:28px;
+
+    align-items:stretch;
+
+}
+
+
+
+.skillCard{
+
+    position:relative;
+
+    background:linear-gradient(
+        180deg,
+        #111d31,
+        #0f1a2c
+    );
+
+    border-radius:24px;
+
+    padding:24px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    min-height:320px;
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+
+.blue{
+
+    border:1px solid rgba(0,212,255,.25);
+
+}
+
+.blue .html{
+    width: 80%;
+}
+.blue .css{
+    width: 85%;
+}
+.blue .js{
+    width: 70%;
+}
+.blue .react{
+    width: 89%;
+}
+.blue .next{
+    width: 70%;
+}
+.purple{
+
+    border:1px solid rgba(165,92,255,.25);
+
+}
+
+.purple .node{
+    width: 77%;
+}
+.purple .express{
+    width: 80%;
+}
+
+.Green{
+
+    border:1px solid rgba(43,255,157,.25);
+
+}
+
+.Green .md{
+    width: 80%;
+}
+.Green .sql{
+    width: 56%;
+}
+
+.orange{
+
+    border:1px solid rgba(255,177,53,.25);
+
+}
+.orange .cpp{
+    width: 70%;
+}
+.orange .java{
+    width: 60%;
+}
+
+
+
+.pink{
+
+    border:1px solid rgba(255,72,189,.25);
+
+}
+
+.pink .git{
+    width: 65%;
+}
+.pink .github{
+    width: 75%;
+}
+.pink .vs{
+    width: 95%;
+}
+.pink .postman{
+    width: 80%;
+}
+
+.skillCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120px;
+    top:-120px;
+
+    width:250px;
+    height:250px;
+
+    border-radius:50%;
+
+    opacity:.08;
+
+    transition:.5s;
+
+}
+
+.blue::before{
+    background:#00d4ff;
+}
+
+.purple::before{
+    background:#8b5cf6;
+}
+
+.Green::before{
+    background:#00d084;
+}
+
+.orange::before{
+    background:#ffb224;
+}
+
+.pink::before{
+    background:#ff4fb7;
+}
+
+
+
+.skillCard:hover{
+
+    transform:
+        translateY(-12px);
+
+}
+
+.skillCard:hover::before{
+
+    transform:scale(1.5);
+
+    opacity:.18;
+
+}
+
+
+
+.skillcard_header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    padding-bottom:18px;
+
+    margin-bottom:20px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+
+.skillcard_element{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 14px;
+
+    margin-bottom:14px;
+
+    border-radius:16px;
+
+    background:#091524;
+
+    transition:.35s;
+
+}
+
+.skillcard_element:hover{
+
+    transform:translateX(6px);
+
+}
+
+
+
+.skillcard_element span{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:#dbe7ff;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+
+.skillCard i:not(.skillcard_header i){
+
+    width:30px;
+    height:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:13px;
+
+    transition:.35s;
+
+}
+
+
+
+.skillcard_header i{
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:18px;
+
+    transition:.45s;
+
+}
+
+
+
+.meter{
+
+    width:72px;
+    height:6px;
+
+    background:#102339;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+.meter-range{
+
+    height:100%;
+
+    border-radius:50px;
+
+    transition:1.2s;
+
+}
+
+
+
+.blue .skillcard_header i{
+
+    color:#00d4ff;
+
+    background:rgba(0,212,255,.12);
+
+    border:1px solid rgba(0,212,255,.30);
+
+}
+
+.blue i:not(.skillcard_header i){
+
+    color:#00d4ff;
+
+    background:rgba(0,212,255,.10);
+
+}
+
+.blue .meter-range{
+
+    background:#00d4ff;
+
+}
+
+
+
+.purple .skillcard_header i{
+
+    color:#9f6dff;
+
+    background:rgba(159,109,255,.12);
+
+    border:1px solid rgba(159,109,255,.30);
+
+}
+
+.purple i:not(.skillcard_header i){
+
+    color:#9f6dff;
+
+    background:rgba(159,109,255,.10);
+
+}
+
+.purple .meter-range{
+
+    background:#9f6dff;
+
+}
+
+
+
+.Green .skillcard_header i{
+
+    color:#1fd78a;
+
+    background:rgba(31,215,138,.12);
+
+    border:1px solid rgba(31,215,138,.30);
+
+}
+
+.Green i:not(.skillcard_header i){
+
+    color:#1fd78a;
+
+    background:rgba(31,215,138,.10);
+
+}
+
+.Green .meter-range{
+
+    background:#1fd78a;
+
+}
+
+
+
+.orange .skillcard_header i{
+
+    color:#ffb524;
+
+    background:rgba(255,181,36,.12);
+
+    border:1px solid rgba(255,181,36,.30);
+
+}
+
+.orange i:not(.skillcard_header i){
+
+    color:#ffb524;
+
+    background:rgba(255,181,36,.10);
+
+}
+
+.orange .meter-range{
+
+    background:#ffb524;
+
+}
+
+
+
+.pink .skillcard_header i{
+
+    color:#ff4bb8;
+
+    background:rgba(255,75,184,.12);
+
+    border:1px solid rgba(255,75,184,.30);
+
+}
+
+.pink i:not(.skillcard_header i){
+
+    color:#ff4bb8;
+
+    background:rgba(255,75,184,.10);
+
+}
+
+.pink .meter-range{
+
+    background:#ff4bb8;
+
+}
+
+
+
+.skillCard:hover .skillcard_header i{
+
+    transform:rotate(360deg) scale(1.12);
+
+    box-shadow:0 0 18px currentColor;
+
+}
+
+.skillcard_element:hover i{
+
+    transform:scale(1.15);
+
+}
+
+
+
+
+.skillCard{
+
+    cursor:pointer;
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        border-color .45s ease;
+
+}
+
+.skillCard:hover{
+
+    transform:
+        translateY(-14px)
+        scale(1.02);
+
+}
+
+
+
+.skillCard::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-1px;
+
+    border-radius:24px;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.blue:hover::after{
+
+    opacity:1;
+
+    box-shadow:
+        0 0 18px rgba(0,212,255,.28),
+        0 0 50px rgba(0,212,255,.12);
+
+}
+
+.purple:hover::after{
+
+    opacity:1;
+
+    box-shadow:
+        0 0 18px rgba(159,109,255,.28),
+        0 0 50px rgba(159,109,255,.12);
+
+}
+
+.Green:hover::after{
+
+    opacity:1;
+
+    box-shadow:
+        0 0 18px rgba(31,215,138,.28),
+        0 0 50px rgba(31,215,138,.12);
+
+}
+
+.orange:hover::after{
+
+    opacity:1;
+
+    box-shadow:
+        0 0 18px rgba(255,181,36,.28),
+        0 0 50px rgba(255,181,36,.12);
+
+}
+
+.pink:hover::after{
+
+    opacity:1;
+
+    box-shadow:
+        0 0 18px rgba(255,75,184,.28),
+        0 0 50px rgba(255,75,184,.12);
+
+}
+
+
+
+.skillCard{
+
+    overflow:hidden;
+
+}
+
+.skillCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-40%;
+
+    width:45%;
+
+    height:300%;
+
+    transform:rotate(25deg);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.15),
+            transparent
+        );
+
+    transition:.8s;
+
+}
+
+.skillCard:hover::before{
+
+    left:140%;
+
+}
+
+
+
+.skillcard_element{
+
+    transition:
+        transform .35s,
+        background .35s;
+
+}
+
+.skillcard_element:hover{
+
+    background:#102039;
+
+    transform:translateX(8px);
+
+}
+
+
+
+.skillcard_element i{
+
+    transition:
+        transform .35s,
+        box-shadow .35s;
+
+}
+
+.skillcard_element:hover i{
+
+    transform:scale(1.15);
+
+    box-shadow:0 0 15px currentColor;
+
+}
+
+
+.meter-range{
+
+    transform-origin:left;
+
+    animation:progressLoad 1.5s ease;
+
+}
+
+@keyframes progressLoad{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+
+
+.skillCard{
+
+    animation:cardReveal .8s ease both;
+
+}
+
+.skillCard:nth-child(1){
+
+    animation-delay:.1s;
+
+}
+
+.skillCard:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.skillCard:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+.skillCard:nth-child(4){
+
+    animation-delay:.4s;
+
+}
+
+.skillCard:nth-child(5){
+
+    animation-delay:.5s;
+
+}
+
+@keyframes cardReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(50px)
+            scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+
+.skillCard{
+
+    animation:
+        cardReveal .8s ease both,
+        floating 6s ease-in-out infinite;
+
+}
+
+.skillCard:nth-child(2){
+
+    animation-delay:.2s,.2s;
+
+}
+
+.skillCard:nth-child(3){
+
+    animation-delay:.3s,.4s;
+
+}
+
+.skillCard:nth-child(4){
+
+    animation-delay:.4s,.6s;
+
+}
+
+.skillCard:nth-child(5){
+
+    animation-delay:.5s,.8s;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}

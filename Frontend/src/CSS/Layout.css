@@ -1,0 +1,25 @@
+:root{
+    --Background: #0c121f;
+--Secondary-Background: #1E293B;
+--Card-Background: #334155;
+--Primary-Color: #06B6D4;
+--Hover-Color: #0891B2;
+--Secondary-Accent: #38BDF8;
+--Heading-Text: #F8FAFC;
+--Paragraph-Text: #CBD5E1;
+--Muted-Text: #94A3B8;
+--Border: #475569;
+
+}
+.Layout-background{
+ margin:0;
+    min-height:100vh;
+
+    background-color:var(--Background);
+
+  background-image:
+    linear-gradient(to right, var(--Secondary-Background) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--Secondary-Background) 1px, transparent 1px);
+
+    background-size:120px 120px;
+}

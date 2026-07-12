@@ -1,0 +1,563 @@
+:root{
+    --bg:#0b1220;
+    --card:#101a2e;
+    --card2:#16233d;
+    --border:#1e3a5f;
+    --primary:#16d5ff;
+    --secondary:#6c63ff;
+    --heading:#f8fafc;
+    --text:#cbd5e1;
+    --muted:#7c8ba1;
+
+}
+
+.project_section{
+    
+    margin-top: 4rem;
+    width: 100%;
+    padding: 5% 2.5% 8%;
+    background:linear-gradient(180deg,#09111d,#0b1323);
+}
+
+.project-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project-header h1{
+    color: var(--Heading-Text);
+    font-weight: 700;
+}
+.project-header span{
+    color: var(--Secondary-Accent);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.projectActive{
+    padding: 0.15rem 0;
+    width: 50px;
+    background: linear-gradient(90deg,var(--Primary-Color),rgb(51, 114, 215),rgb(154, 45, 227));
+    border-radius: 25px;
+     background-size: 300% 300%;
+    animation: gradientMove 4s ease infinite;
+}
+
+
+.projects-container{
+    display:flex;
+    flex-direction:column;
+    gap:45px;
+}
+
+
+
+.project-card{
+
+    display:grid;
+    grid-template-columns:45% 55%;
+    align-items:center;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    backdrop-filter:blur(18px);
+      background:rgba(18,28,48,.88);
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+
+}
+.Green.project-card {
+  
+    border:1px solid rgba(31, 143, 44, 0.45);
+
+}
+.purple.project-card{
+   
+    border:1px solid rgba(96, 31, 143, 0.45);
+
+}
+
+.Green.project-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#29ff16;
+
+    box-shadow:
+    0 0 20px rgba(22, 255, 34, 0.15),
+    0 25px 60px rgba(0,0,0,.45);
+
+}
+
+.purple.project-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#6f16ff;
+
+    box-shadow:
+    0 0 20px rgba(123, 22, 255, 0.15),
+    0 25px 60px rgba(0,0,0,.45);
+
+}
+
+.project-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+  height: 100%;
+  
+ 
+
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+    object-position: left;
+    display:block;
+
+    transition:.7s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+
+
+.badge{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    z-index:10;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.Green .badge{
+background:linear-gradient(90deg,#4cfb17,#3dff3d);
+}
+
+.purple .badge{
+background:linear-gradient(90deg,#b111fb,#943dff);
+}
+
+
+.project-content{
+
+    padding:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.project-content small{
+
+    letter-spacing:1px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+.Green .project-content small{
+   color:#50ff16;
+}
+
+.purple .project-content small{
+    color: #b516ff;
+}
+
+.project-content h3{
+
+    font-size:42px;
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.project-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+
+
+.feature-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.feature-list span{
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+
+    font-size:14px;
+
+    transition:.35s;
+
+}
+.Green .feature-list span{
+ background:#174513;
+
+    border:1px solid #2a7724;
+
+    color:#b7ffa9;
+}
+
+.purple .feature-list span{
+     background:#2c1345;
+
+    border:1px solid #4e2477;
+
+    color:#dda9ff;
+}
+
+
+
+.Green .feature-list span:hover{
+    background:#16ff39;
+
+    color:#0b1808;
+}
+
+.purple .feature-list span:hover{
+    background:#6416ff;
+
+    color:#100818;
+}
+
+.stack{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.stack-title{
+    font-weight:600;
+
+}
+.Green .stack-title{
+      color:#99b88f;
+}
+.purple .stack-title{
+    color:#ae8fb8;
+}
+
+.tech{
+
+    padding:7px 16px;
+
+    border-radius:40px;
+
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.Green .tech{
+ background:#19580b;
+
+    color:#52ff3f;
+
+    border:1px solid #2b990d;
+}
+
+.purple .tech{
+     background:#310b58;
+
+    color:#c23fff;
+
+    border:1px solid #6d0d99;
+}
+
+
+.project-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:10px;
+
+}
+
+.project-buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+
+.Green .github-btn{
+
+    color:white;
+
+    border:1px solid #458133;
+
+    background:transparent;
+
+}
+
+.Green .github-btn:hover{
+
+    background:#22481b;
+
+}
+
+.purple .github-btn{
+
+    color:white;
+
+    border:1px solid #673381;
+
+    background:transparent;
+
+}
+
+.purple .github-btn:hover{
+
+    background:#2f1b48;
+
+}
+
+
+
+.Green .live-btn{
+
+    background:linear-gradient(90deg,#22fa16,#06d630);
+
+    color:#06131c;
+
+}
+.purple .live-btn{
+    background:linear-gradient(90deg,#ae00ff,#910aff) !important;
+    color:#06131c;
+}
+
+.Green .live-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 25px rgba(60, 255, 0, 0.45);
+
+}
+.purple .live-btn:hover{
+     transform:translateY(-3px);
+
+    box-shadow:0 0 25px rgba(93, 0, 255, 0.45);
+}
+
+
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+@media(max-width:1100px){
+
+.project-card{
+
+grid-template-columns:1fr;
+
+}
+
+.project-image{
+
+height:350px;
+
+}
+
+
+.project-content{
+
+padding:35px;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.projects-section{
+
+padding:80px 20px;
+
+}
+
+.project-heading h2{
+
+font-size:34px;
+
+}
+
+.project-content{
+
+padding:28px;
+
+}
+
+.project-content h3{
+
+font-size:32px;
+
+}
+
+.project-content p{
+
+font-size:15px;
+
+}
+
+.project-buttons{
+
+flex-direction:column;
+
+}
+
+.project-buttons a{
+
+justify-content:center;
+
+}
+
+.project-image{
+
+height:250px;
+
+}
+
+}
+
+
+
+@media(max-width:500px){
+
+.project-heading h2{
+
+font-size:28px;
+
+}
+
+.project-content{
+
+padding:22px;
+
+}
+
+.feature-list span{
+
+font-size:12px;
+
+padding:7px 12px;
+
+}
+
+.tech{
+
+font-size:12px;
+
+padding:6px 12px;
+
+}
+
+.badge{
+
+font-size:12px;
+
+padding:7px 15px;
+
+}
+
+}
+
+
+

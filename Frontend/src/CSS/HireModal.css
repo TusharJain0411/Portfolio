@@ -1,0 +1,254 @@
+
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(3, 8, 20, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+
+
+.hire-modal {
+    width: 95%;
+    max-width: 550px;
+    padding: 35px;
+    background: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    animation: popup 0.35s ease;
+}
+
+
+
+.hire-modal h2 {
+    margin-bottom: 10px;
+    color: #F8FAFC;
+    text-align: center;
+    font-size: 32px;
+}
+
+.hire-modal p {
+    margin-bottom: 25px;
+    color: #94A3B8;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+.hire-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+
+.hire-modal input,
+.hire-modal textarea,
+.hire-modal select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    background: #1E293B;
+    color: #F8FAFC;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.hire-modal input::placeholder,
+.hire-modal textarea::placeholder {
+    color: #94A3B8;
+}
+
+.hire-modal textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+
+.hire-modal input:focus,
+.hire-modal textarea:focus,
+.hire-modal select:focus {
+    border-color: #06B6D4;
+    box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.18);
+}
+
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.modal-buttons button {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+.modal-buttons button:first-child {
+    background: #1E293B;
+    color: #CBD5E1;
+}
+
+.modal-buttons button:first-child:hover {
+    background: #334155;
+}
+
+
+
+.modal-buttons button:last-child {
+    background: linear-gradient(135deg, #06B6D4, #3B82F6);
+    color: #fff;
+}
+
+.modal-buttons button:last-child:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(6, 182, 212, 0.35);
+}
+
+
+.modal-buttons button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.hire-modal textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.hire-modal textarea::-webkit-scrollbar-thumb {
+    background: #06B6D4;
+    border-radius: 10px;
+}
+
+
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translateY(35px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .hire-modal {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .hire-modal h2 {
+        font-size: 26px;
+    }
+
+    .modal-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .modal-buttons button {
+        width: 100%;
+    }
+}
+
+
+
+.hire-modal {
+    width: 90%;
+    max-width: 420px; 
+    padding: 24px;
+    background: #111827;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.45);
+}
+
+.hire-modal h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.hire-modal p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.hire-modal form {
+    gap: 14px;
+}
+
+.hire-modal input,
+.hire-modal textarea,
+.hire-modal select {
+    padding: 11px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.hire-modal textarea {
+    min-height: 100px;
+}
+
+.modal-buttons {
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.modal-buttons button {
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .hire-modal {
+        max-width: 340px;
+        padding: 20px;
+    }
+
+    .hire-modal h2 {
+        font-size: 22px;
+    }
+
+    .modal-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .modal-buttons button {
+        width: 100%;
+    }
+}
