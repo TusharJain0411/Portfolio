@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRef } from "react";
 import "../CSS/home.css"
+import Resume from "./MyResume.pdf";
 function Home() {
 
   const cardRef = useRef(null);
@@ -45,7 +46,12 @@ const openEmail = () => {
   );
 };
 
-
+const handleDownloadResume = () => {
+  const link = document.createElement("a");
+  link.href = Resume;
+  link.download = "Tushar_Dungarwal_Resume.pdf";
+  link.click();
+};
 
 
 
@@ -72,9 +78,9 @@ const openEmail = () => {
               <button className="project-view" onClick={handleProjects}>
                 <i className="fa-regular fa-folder-open"></i>View Projects
               </button>
-              <a href="./TusharDungarwal.pdf" className="download-resume">
+              <buttom onClick={handleDownloadResume} className="download-resume">
                 <i className="fa-solid fa-download"></i>Download Resume
-              </a>
+              </buttom>
             </div>
             <div className="contact-btns">
               <button onClick={openGithub}>
