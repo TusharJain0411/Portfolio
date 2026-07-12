@@ -153,7 +153,7 @@ text-shadow: 0 0 5px var(--cardBackgroundBorder);
 
 .btn-class{
     display: flex;
-    width: 70%;
+    width: 35%;
     justify-content: space-between;
     align-items: center;
     
@@ -355,20 +355,19 @@ padding: 0.9rem 1rem;
     width: 100% !important;
     height: 55vh !important;
   }
-  .btn-class{
-    width: 73% !important;
-  }
+  
 }
 
 @media (max-width: 850px){
   .Home-section{
     height: 60vh;
   }
-  .btn-class{
-    width: 80%;
-  }
+ 
   .Intro{
     height: 47vh !important;
+  }
+  .btn-class{
+    width: 40%;
   }
 }
 
