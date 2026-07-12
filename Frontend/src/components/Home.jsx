@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRef } from "react";
 import "../CSS/home.css"
-import Resume from "../assets/MyResume.pdf";
+import Resume from "../Assets/MyResume.pdf";
 function Home() {
 
   const cardRef = useRef(null);
