@@ -186,26 +186,8 @@ padding: 0.9rem 1rem;
     box-shadow:0 0 10px rgb(75, 72, 72);
 }
 
-.view-btns .download-resume{
-     border: 2px solid var(--Secondary-Accent);
-    background-color: var(--cardBackground);
-    color: var(--Heading-Text);
-     font-weight: 800;
-    display: flex;
-    gap: 0.5rem;
-    justify-content:center ;
-    align-items: center;
-box-shadow:0 0 10px rgb(75, 72, 72);
-border-radius: 25px;
-padding: 0.9rem 1.1rem;
 
-}
 
-.view-btns .download-resume:hover{
-    background-color: var(--Primary-Color);
-    color: black;
-    box-shadow:0 0 10px #10c5e4;
-}
 
 
 .contact-btns{

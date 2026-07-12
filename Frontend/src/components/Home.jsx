@@ -45,9 +45,7 @@ const openEmail = () => {
   );
 };
 
-const handleDownloadResume = () => {
-  window.open("/TusharDungarwal.pdf", "_blank", "noopener,noreferrer");
-};
+
 
 
   return (
@@ -73,9 +71,7 @@ const handleDownloadResume = () => {
               <button className="project-view" onClick={handleProjects}>
                 <i className="fa-regular fa-folder-open"></i>View Projects
               </button>
-              <buttom onClick={handleDownloadResume} className="download-resume">
-                <i className="fa-solid fa-download"></i>Download Resume
-              </buttom>
+              
             </div>
             <div className="contact-btns">
               <button onClick={openGithub}>
