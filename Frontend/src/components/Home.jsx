@@ -78,10 +78,9 @@ const handleDownloadResume = () => {
               <button className="project-view" onClick={handleProjects}>
                 <i className="fa-regular fa-folder-open"></i>View Projects
               </button>
-              <button className="download-resume"
-              onClick={handleDownloadResume}>
+              <a href="./TusharDungarwal.pdf" className="download-resume">
                 <i className="fa-solid fa-download"></i>Download Resume
-              </button>
+              </a>
             </div>
             <div className="contact-btns">
               <button onClick={openGithub}>
