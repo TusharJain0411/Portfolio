@@ -195,6 +195,7 @@ text-shadow: 0 0 5px var(--cardBackgroundBorder);
     justify-content:center ;
     align-items: center;
 box-shadow:0 0 10px rgb(75, 72, 72);
+border-radius: 20px;
 }
 
 .view-btns .download-resume:hover{
