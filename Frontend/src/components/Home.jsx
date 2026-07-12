@@ -1,7 +1,6 @@
 import React from 'react'
 import { useRef } from "react";
-import "../CSS/home.css"
-import Resume from "./MyResume.pdf";
+import "../CSS/home.css";
 function Home() {
 
   const cardRef = useRef(null);
@@ -47,12 +46,8 @@ const openEmail = () => {
 };
 
 const handleDownloadResume = () => {
-  const link = document.createElement("a");
-  link.href = Resume;
-  link.download = "Tushar_Dungarwal_Resume.pdf";
-  link.click();
+  window.open("/TusharDungarwal.pdf", "_blank", "noopener,noreferrer");
 };
-
 
 
   return (

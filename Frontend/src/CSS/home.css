@@ -163,8 +163,7 @@ text-shadow: 0 0 5px var(--cardBackgroundBorder);
     gap: 1rem;
 }
 .view-btns button{
-    padding: 0.9rem 1.5rem;
-    border-radius: 20px;
+   
     border: none;
     
 }
@@ -177,6 +176,8 @@ text-shadow: 0 0 5px var(--cardBackgroundBorder);
     justify-content:center ;
     align-items: center;
     box-shadow:0 0 10px #10c5e4;
+    border-radius: 25px;
+padding: 0.9rem 1rem;
 }
 .view-btns .project-view:hover{
     border: 2px solid var(--Secondary-Accent);
@@ -195,7 +196,9 @@ text-shadow: 0 0 5px var(--cardBackgroundBorder);
     justify-content:center ;
     align-items: center;
 box-shadow:0 0 10px rgb(75, 72, 72);
-border-radius: 20px;
+border-radius: 25px;
+padding: 0.9rem 1rem;
+
 }
 
 .view-btns .download-resume:hover{
