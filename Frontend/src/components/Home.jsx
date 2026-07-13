@@ -35,13 +35,20 @@ const handleProjects = () => {
 };
 
 const openGithub = () => {
-  window.open("https://github.com/TusharJain0411", "_blank");
+
+  window.open(
+    "https://github.com/TusharJain0411",
+    "_blank",
+    
+  );
 };
 
 const openEmail = () => {
+  
   window.open(
     "https://mail.google.com/mail/?view=cm&fs=1&to=jtushar3568@gmail.com",
     "_blank",
+   
   );
 };
 

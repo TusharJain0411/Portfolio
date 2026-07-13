@@ -17,7 +17,7 @@
 
 
 .About-class{
-    height: 100vh;
+   
     background-color: var(--navbar);
     padding: 2.5%;
     display: flex;
@@ -179,7 +179,7 @@
 
 .achivements{
     width: 100%;
-    height: 25vh;
+    
     border: 1px solid var(--Border);
     border-radius: 15px;
     background-color: var(--cardBackgroundBorder);
@@ -210,6 +210,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 0.5rem;
+padding: 2rem;
 }
 .ach-inner-block span:nth-child(1){
     display: flex;
@@ -267,11 +268,11 @@ font-size: 22px;
     display: none;
 }
 .intro_section_tab{
-    height: 55vh;
+   
 }
 
 .About-class{
-    height: 70vh;
+    
 }
 .intro_section_tab{
     width: 100%;
@@ -412,7 +413,7 @@ border-bottom-left-radius: 0;
 
 .achivements_tab{
     width: 100%;
-    height: 10vh;
+    
     border: 1px solid var(--Border);
     border-radius: 15px;
     background-color: var(--cardBackgroundBorder);
@@ -420,7 +421,7 @@ border-bottom-left-radius: 0;
     display: flex;
     gap: 1rem;
     padding: 0.5rem;
-
+margin-bottom: 1rem;
 }
 .achivements_tab .blue span:nth-child(1){
     color: var(--Primary-Color);
@@ -443,6 +444,8 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 0.5rem;
+padding: 1rem;
+
 }
 .ach-inner-block_tab span:nth-child(1){
     display: flex;
@@ -465,7 +468,7 @@ font-size: 20px;
 
  .softskill_tab{
     display: flex;
-    position: absolute;
+  
     bottom: 1rem;
     gap: 0.5rem;
  }
@@ -493,13 +496,13 @@ font-size: 20px;
 
 @media (max-width: 768px){
 .About-class{
-    height: 100vh;
+   
 }
 .intro_section_tab{
    display: none;
 }
 .intro_section_phone{
-        height: 90vh;
+       
     background-color: var(--Background);
     padding: 0% 2%;
     display: flex;
@@ -620,7 +623,7 @@ font-size: 20px;
 
 .achivements_phone{
     width: 100%;
-    height: 10vh;
+  
     border: 1px solid var(--Border);
     border-radius: 15px;
     background-color: var(--cardBackgroundBorder);
@@ -629,6 +632,7 @@ font-size: 20px;
     gap: 1rem;
     padding: 0.5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 
 }
 .achivements_phone .blue span:nth-child(1){
@@ -654,6 +658,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 0.5rem;
+padding: 1rem;
 }
 .ach-inner-block_phone span:nth-child(1){
     display: flex;

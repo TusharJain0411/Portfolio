@@ -17,7 +17,7 @@
 .Home-section{
     display: flex;
 
-    height: 100vh;
+    
     padding: 2.5%;
     gap: 1rem;
     
@@ -33,7 +33,7 @@
     box-shadow: -5px -4px 15px  1px var(--cardBackgroundBorder);
     flex-direction: column;
     margin-top: 4rem;
-    height: 78vh;
+   
 }
 
 .Home-section .codeProfile{
@@ -46,7 +46,7 @@ background-color: var(--cardBackground);
   box-shadow: -3px -6px 15px  1px var(--cardBackgroundBorder),
   3px 6px 15px 1px var(--cardBackgroundBorder2);
   margin-top: 4rem;
-  height: 78vh;
+
 }
 
 
@@ -346,26 +346,22 @@ padding: 0.9rem 1rem;
 
 @media (max-width: 900px) {
   .Home-section{
-    height: 70vh;
+   
   }
   .codeProfile {
     display: none !important;
   }
   .Intro{
     width: 100% !important;
-    height: 55vh !important;
+    
   }
   
 }
 
 @media (max-width: 850px){
-  .Home-section{
-    height: 60vh;
-  }
  
-  .Intro{
-    height: 47vh !important;
-  }
+ 
+ 
   .btn-class{
     width: 40%;
   }
@@ -373,7 +369,7 @@ padding: 0.9rem 1rem;
 
 @media (max-width: 768px){
     .Home-section{
-        height: 100vh;
+        
         padding-top: 1rem;
     }
     .first-name,.last-name{
@@ -392,7 +388,7 @@ padding: 0.9rem 1rem;
 
      .Intro{
     width: 95% !important;
-    height: 80vh !important;
+  
     margin: auto;
   
     border: none;

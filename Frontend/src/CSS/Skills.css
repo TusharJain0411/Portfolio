@@ -817,3 +817,9 @@
     }
 
 }
+
+@media (max-width:900px) {
+    .skillCard{
+        min-height: 450px;
+    }
+}

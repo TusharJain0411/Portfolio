@@ -22,6 +22,7 @@ function Footer() {
     window.open(
       "https://mail.google.com/mail/?view=cm&fs=1&to=jtushar3568@gmail.com",
       "_blank",
+      
     );
   };
 
