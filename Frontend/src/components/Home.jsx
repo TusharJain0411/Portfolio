@@ -78,15 +78,25 @@ const openEmail = () => {
               <button className="project-view" onClick={handleProjects}>
                 <i className="fa-regular fa-folder-open"></i>View Projects
               </button>
-              
             </div>
+
             <div className="contact-btns">
-              <button onClick={openGithub}>
+              <a
+                href="https://github.com/TusharJain0411"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
                 <i className="fa-brands fa-github"></i>
-              </button>
-              <button onClick={openEmail}>
+              </a>
+
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=jtushar3568@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-regular fa-envelope"></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>

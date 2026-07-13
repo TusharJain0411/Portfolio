@@ -18,13 +18,6 @@ function Footer() {
     });
   };
 
-  const openEmail = () => {
-    window.open(
-      "https://mail.google.com/mail/?view=cm&fs=1&to=jtushar3568@gmail.com",
-      "_blank",
-      
-    );
-  };
 
   return (
     <footer className="footer">
@@ -49,11 +42,16 @@ function Footer() {
             <a
               href="https://github.com/TusharJain0411"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <FaGithub />
             </a>
-            <a onClick={openEmail}>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=jtushar3568@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaEnvelope />
             </a>
           </div>
