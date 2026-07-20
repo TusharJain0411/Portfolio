@@ -53,14 +53,14 @@ function Skills() {
               </div>
             </div>
 
-            <div className="skillcard_element">
+            {/* <div className="skillcard_element">
               <span>
                 <i className="fa-solid fa-laptop-code"></i>Next.js
               </span>
               <div className="meter">
                 <div className="meter-range next"></div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="skillCard  purple">
