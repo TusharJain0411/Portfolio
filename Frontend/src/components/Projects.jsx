@@ -3,6 +3,7 @@ import "../CSS/projects.css"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import medicare from "../Assets/medicare.png"
 import ecommerce from "../Assets/ecommerce.png"
+import planora from "../Assets/Planora.png"
 
 function Projects() {
 
@@ -10,6 +11,45 @@ function Projects() {
 const projects = [
   {
     id: 1,
+    category: "AI TRAVEL PLANNER",
+    title: "Planora",
+
+    image: planora,
+
+    type: "MERN Stack + AI",
+
+    description:
+      "A full-stack AI-powered travel planning platform that helps users create personalized itineraries based on destination, travel dates, budget, travelers, travel style, and preferences, with detailed activities, stays, weather, maps, and nearby restaurants.",
+
+    features: [
+      "User Authentication",
+      "AI-Powered Itinerary Generation",
+      "Personalized Travel Planning",
+      "Destination & Place Search",
+      "Hotel & Stay Recommendations",
+      "Weather Forecast",
+      "Nearby Restaurant Recommendations",
+      "Trip Management",
+    ],
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redux",
+      "Google Maps API",
+      "Google Places API",
+      "OpenWeather API",
+      "Groq AI",
+    ],
+
+    github: "https://github.com/TusharJain0411/Planora-AI-Travel-Planner",
+    demo: "https://planora-ai-travel-planner-alpha.vercel.app/",
+    class: "blue",
+  },
+  {
+    id: 2,
     category: "DOCTOR APPOINTMENT BOOKING SYSTEM",
     title: "MediCare",
     image: medicare,
@@ -34,7 +74,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     category: "FULL-STACK E-COMMERCE PLATFORM",
     title: "Ecommmerce",
 
