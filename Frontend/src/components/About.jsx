@@ -1,28 +1,34 @@
-import React from 'react'
-import { useRef } from "react";
+import React, { useState } from 'react'
 import "../CSS/about.css"
 function About() {
 
-    const cardRef = useRef(null);
-  
-    const handleMove = (e) => {
-      const card = cardRef.current;
-      const rect = card.getBoundingClientRect();
-  
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-  
-      const rotateY = (x / rect.width - 0.5) * 20;
-      const rotateX = ((rect.height / 2 - y) / rect.height) * 20;
-  
-      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    };
-  
-    const handleLeave = () => {
-      cardRef.current.style.transform =
-        "perspective(1000px) rotateX(0deg) rotateY(0deg)";
-    };
+    const [bor,setBor]=useState(false);
+   const handleMove = (e) => {
+    setBor(true);
+     const card = e.currentTarget;
 
+     const rect = card.getBoundingClientRect();
+
+     const x = e.clientX - rect.left;
+     const y = e.clientY - rect.top;
+
+     const rotateY = (x / rect.width - 0.5) * 20;
+     const rotateX = (0.5 - y / rect.height) * 20;
+
+     card.style.transform = `
+    perspective(1000px)
+    rotateX(${rotateX}deg)
+    rotateY(${rotateY}deg)
+  `;
+   };
+
+   const handleLeave = (e) => {
+    setBor(false);
+     e.currentTarget.style.transform =
+       "perspective(1000px) rotateX(0deg) rotateY(0deg)";
+   };
+  
+   
 
   return (
     <>
@@ -30,7 +36,6 @@ function About() {
         {/* laptop */}
         <div
           className="img-section"
-          ref={cardRef}
           onMouseMove={handleMove}
           onMouseLeave={handleLeave}
         >
@@ -141,8 +146,7 @@ function About() {
           </div>
 
           <div
-            className="tab_img"
-            ref={cardRef}
+            className={`tab_img ${bor?"bor-on":"bor-off"}`}
             onMouseMove={handleMove}
             onMouseLeave={handleLeave}
           >
@@ -157,7 +161,6 @@ function About() {
         <div className="intro_section_phone">
           <div
             className="img_section_phone"
-            ref={cardRef}
             onMouseMove={handleMove}
             onMouseLeave={handleLeave}
           >

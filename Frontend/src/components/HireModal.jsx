@@ -11,9 +11,9 @@ function HireModal({ open, onClose }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    budget: "",
-    project: "",
-    message: "",
+    position: "",
+    salary: "",
+    jobRole: "",
   });
 
   if (!open) return null;
@@ -28,14 +28,21 @@ function HireModal({ open, onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (loading) return;
+
     setLoading(true);
 
     try {
-      await axios.post(`${API}/api/contact`, {
+
+       console.log("API:", API);
+       console.log("Hire endpoint:", `${API}/api/hire`);
+
+      await axios.post(`${API}/api/hire`, {
         name: form.name,
         email: form.email,
-        subject: `Hire Me | ${form.project} | Budget: ${form.budget}`,
-        message: form.message,
+        position: form.position,
+        salary: form.salary,
+        jobRole: form.jobRole,
       });
 
       toast.success("Proposal sent successfully!");
@@ -43,17 +50,19 @@ function HireModal({ open, onClose }) {
       setForm({
         name: "",
         email: "",
-        budget: "",
-        project: "",
-        message: "",
+        position: "",
+        salary: "",
+        jobRole: "",
       });
 
       onClose();
-    } catch {
-      toast.error("Unable to send proposal");
-    }
+    } catch (error) {
+      console.error(error);
 
-    setLoading(false);
+      toast.error(error.response?.data?.message || "Unable to send proposal");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -80,34 +89,35 @@ function HireModal({ open, onClose }) {
           />
 
           <input
-            name="budget"
-            placeholder="Budget"
-            value={form.budget}
+            name="position"
+            placeholder="Job Position"
+            value={form.position}
             onChange={handleChange}
+            required
           />
 
           <input
-            name="project"
-            placeholder="Project Type"
-            value={form.project}
+            name="salary"
+            placeholder="Salary / Budget"
+            value={form.salary}
             onChange={handleChange}
           />
 
           <textarea
             rows="5"
-            name="message"
-            placeholder="Project Details"
-            value={form.message}
+            name="jobRole"
+            placeholder="Job Details"
+            value={form.jobRole}
             onChange={handleChange}
             required
           />
 
           <div className="modal-buttons">
-            <button type="button" onClick={onClose}>
+            <button type="button" onClick={onClose} disabled={loading}>
               Cancel
             </button>
 
-            <button type="submit">
+            <button type="submit" disabled={loading}>
               {loading ? "Sending..." : "Send Proposal"}
             </button>
           </div>

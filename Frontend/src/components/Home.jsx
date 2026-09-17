@@ -97,6 +97,14 @@ const openEmail = () => {
               >
                 <i className="fa-regular fa-envelope"></i>
               </a>
+
+              <a
+                href="https://www.linkedin.com/in/tushar-dungarwal-2900a4236/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-linkedin-in"></i>
+              </a>
             </div>
           </div>
         </div>

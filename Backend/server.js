@@ -5,6 +5,7 @@ const rateLimit = require("express-rate-limit");
 require("dotenv").config();
 
 const contactRoute = require("./routes/contactRoute");
+const hireRoutes = require("./routes/hireRoutes");
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.use("/api", limiter);
 
 app.use("/api/contact", contactRoute);
 
+app.use("/api/hire", hireRoutes);
 app.get("/", (req, res) => {
   res.json({
     success: true,

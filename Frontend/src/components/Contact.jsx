@@ -114,7 +114,7 @@ const handleSubmit = async (e) => {
                 <label>Your Name</label>
                 <input
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Jack Smith"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
@@ -126,7 +126,7 @@ const handleSubmit = async (e) => {
                 <label>Email Address</label>
                 <input
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="jack@example.com"
                   name="email"
                   value={form.email}
                   onChange={handleChange}

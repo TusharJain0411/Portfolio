@@ -529,99 +529,153 @@ padding:35px;
 
 
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-.projects-section{
+  .project_section {
+    margin-top: 2rem;
+    padding: 60px 16px;
+    width: 100%;
+  }
 
-padding:80px 20px;
+  .projects-container {
+    width: 100%;
+    gap: 30px;
+  }
 
-}
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+  }
 
-.project-heading h2{
+  .project-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
 
-font-size:34px;
+  .project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
 
-}
+  .badge {
+    top: 12px;
+    left: 12px;
+    font-size: 11px;
+    padding: 6px 12px;
+  }
 
-.project-content{
+  .project-content {
+    width: 100%;
+    padding: 24px 20px;
+    gap: 14px;
+  }
 
-padding:28px;
+  .project-content h3 {
+    font-size: 28px;
+  }
 
-}
+  .project-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 
-.project-content h3{
+  .feature-list {
+    gap: 7px;
+  }
 
-font-size:32px;
+  .feature-list span {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
 
-}
+  .stack {
+    gap: 7px;
+  }
 
-.project-content p{
+  .tech {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
 
-font-size:15px;
+  .project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 
-}
-
-.project-buttons{
-
-flex-direction:column;
-
-}
-
-.project-buttons a{
-
-justify-content:center;
-
-}
-
-.project-image{
-
-height:250px;
-
-}
-
-}
-
-
-
-@media(max-width:500px){
-
-.project-heading h2{
-
-font-size:28px;
-
-}
-
-.project-content{
-
-padding:22px;
-
-}
-
-.feature-list span{
-
-font-size:12px;
-
-padding:7px 12px;
-
-}
-
-.tech{
-
-font-size:12px;
-
-padding:6px 12px;
-
-}
-
-.badge{
-
-font-size:12px;
-
-padding:7px 15px;
-
-}
-
+  .project-buttons a {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
 }
 
 
+/* =========================
+   SMALL MOBILE
+========================= */
 
+@media (max-width: 500px) {
+
+  .project_section {
+    padding: 50px 12px;
+  }
+
+  .project-header {
+    gap: 0.7rem;
+  }
+
+  .project-header h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .project-card {
+    border-radius: 15px;
+  }
+
+  .project-content {
+    padding: 20px 16px;
+  }
+
+  .project-content small {
+    font-size: 10px;
+  }
+
+  .project-content h3 {
+    font-size: 25px;
+  }
+
+  .project-content p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .feature-list span {
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+
+  .tech {
+    font-size: 10px;
+    padding: 5px 9px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .project-buttons a {
+    font-size: 13px;
+    padding: 11px 16px;
+  }
+}
