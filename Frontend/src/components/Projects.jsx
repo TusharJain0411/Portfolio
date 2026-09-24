@@ -4,6 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import medicare from "../Assets/medicare.png"
 import ecommerce from "../Assets/ecommerce.png"
 import planora from "../Assets/Planora.png"
+import fairway from "../Assets/fairway.png";
 
 function Projects() {
 
@@ -100,6 +101,45 @@ const projects = [
     github: "https://github.com/TusharJain0411/Ecommerce",
     demo: "https://ecommerce-tawny-nine-15.vercel.app/",
     class: "purple",
+  },
+  {
+    id: 4,
+    category: "FULL-STACK GOLF CHARITY PLATFORM",
+    title: "Fairway Impact",
+
+    image: fairway,
+
+    type: "MERN Stack",
+
+    description:
+      "A full-stack golf charity platform that allows users to track golf scores, support charities through online payments, view winnings, and manage their activity through a responsive dashboard.",
+
+    features: [
+      "User Authentication",
+      "Golf Score Tracking",
+      "Online Payments",
+      "Charity Contributions",
+      "Winnings Tracking",
+      "Interactive Dashboard",
+      "User Profile Management",
+      "Responsive Design",
+    ],
+
+    tech: [
+      "React",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Payment Gateway",
+      "React Router",
+      "CSS",
+    ],
+
+    github: "https://github.com/TusharJain0411/fairway-impact",
+    demo: "https://fairway-impact-silk.vercel.app/",
+    class: "fairway",
   },
 ];
 

@@ -27,9 +27,9 @@ function Layout() {
           <Skills />
         </ScrollReveal>
 
-        <ScrollReveal>
+       
           <Projects />
-        </ScrollReveal>
+       
 
         <ScrollReveal>
           <Education />

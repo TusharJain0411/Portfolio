@@ -487,6 +487,82 @@ background:linear-gradient(90deg,#b111fb,#943dff);
 }
 
 
+/* =========================
+   FAIRWAY IMPACT - GOLD
+========================= */
+
+.fairway.project-card {
+  border: 1px solid rgba(244, 201, 93, 0.45);
+}
+
+.fairway.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #f4c95d;
+
+  box-shadow:
+    0 0 20px rgba(244, 201, 93, 0.18),
+    0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Badge */
+.fairway .badge {
+  background: linear-gradient(90deg, #d9aF37, #f4c95d);
+  color: #17130a;
+}
+
+/* Category */
+.fairway .project-content small {
+  color: #f4c95d;
+}
+
+/* Features */
+.fairway .feature-list span {
+  background: #3a321d;
+  border: 1px solid #6f5d2b;
+  color: #f8dfa0;
+}
+
+.fairway .feature-list span:hover {
+  background: #f4c95d;
+  color: #17130a;
+}
+
+/* Stack title */
+.fairway .stack-title {
+  color: #cbbd98;
+}
+
+/* Technologies */
+.fairway .tech {
+  background: #40351a;
+  color: #f4c95d;
+  border: 1px solid #806a2e;
+}
+
+/* GitHub Button */
+.fairway .github-btn {
+  color: white;
+  border: 1px solid #806a2e;
+  background: transparent;
+}
+
+.fairway .github-btn:hover {
+  background: #40351a;
+  border-color: #f4c95d;
+}
+
+/* Live Demo Button */
+.fairway .live-btn {
+  background: linear-gradient(90deg, #d9af37, #f4c95d) !important;
+  color: #17130a;
+}
+
+.fairway .live-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 25px rgba(244, 201, 93, 0.4);
+}
 
 @keyframes gradientMove {
     0% {
